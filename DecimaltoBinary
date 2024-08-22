@@ -1,0 +1,15 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int num=0;
+        String res="";
+		int rem=0;
+        while(num>0)//8>0 true 4>0 true 2>0 true 1>0 true 0>0 false
+        {           //
+            rem=num%2;//rem=8%2=0 rem=4%2=0 rem=2%2=0 rem=1%2=1
+            res=rem+res;//res=0+""=0 res=0+0=00 res=0+00=000 res=1+000=1000
+            num/=2;//num=8/2=4 num=4/2=2 num=2/2=1 num=1/2=0;
+        }
+        System.out.println(res);
+	}
+}
